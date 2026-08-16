@@ -1083,6 +1083,14 @@ def build_and_publish_marts(
         updated_manifest["artifacts"] = dict(manifest["artifacts"])
         updated_manifest["artifacts"]["marts_parquet_sha256"] = mart_hashes
         updated_manifest["artifacts"]["marts_combined_sha256"] = _combined_sha256(mart_hashes)
+        deterministic_mart_hashes = {
+            name: hash_value
+            for name, hash_value in mart_hashes.items()
+            if name != "meta_run"
+        }
+        updated_manifest["artifacts"][
+            "marts_deterministic_combined_sha256"
+        ] = _combined_sha256(deterministic_mart_hashes)
         updated_manifest["artifacts"]["marts_quality_report_sha256"] = _sha256(
             staged_manifest / "marts_quality_report.json"
         )

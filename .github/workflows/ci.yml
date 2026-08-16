@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "agent/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run test suite
+        run: python -m pytest -q
+
+      - name: Rebuild canonical scenario
+        run: |
+          python -m src.pipeline \
+            --config config/scenario_base.yaml \
+            --output-dir "$RUNNER_TEMP/b2b/synthetic" \
+            --validated-dir "$RUNNER_TEMP/b2b/validated" \
+            --marts-dir "$RUNNER_TEMP/b2b/marts" \
+            --manifest-dir "$RUNNER_TEMP/b2b/manifest"
+
+      - name: Reconcile deterministic artifacts and KPI controls
+        run: |
+          python -m src.reconcile \
+            --expected-manifest data/manifest/run_manifest.json \
+            --candidate-manifest "$RUNNER_TEMP/b2b/manifest/run_manifest.json" \
+            --expected-controls data/manifest/kpi_controls.json \
+            --candidate-controls "$RUNNER_TEMP/b2b/manifest/kpi_controls.json"

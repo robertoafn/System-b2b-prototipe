@@ -1,10 +1,10 @@
 ---
 doc_id: "PBI-CHAT-01"
 title: "Guía interactiva ChatGPT + Power BI — V1.0 Core"
-version: "3.13"
-status: "active_manual_build"
+version: "3.14"
+status: "release_candidate_manual_validation"
 created: "2026-08-14"
-updated: "2026-08-14"
+updated: "2026-08-16"
 depends_on:
   - "MVP-D03"
   - "MVP-I04"
@@ -53,7 +53,7 @@ Tu misión es guiarme manualmente, un checkpoint a la vez, para construir y vali
 1. carga de 14 marts Parquet;
 2. modelo estrella con relaciones controladas;
 3. tabla dedicada de medidas;
-4. 17 KPI contractuales y medidas auxiliares;
+4. 17 KPI, 2 medidas de soporte y 20 medidas auxiliares;
 5. exactamente cuatro páginas Core;
 6. reconciliación contra controles Python;
 7. guardado final de b2b_v1.pbix.
@@ -83,7 +83,7 @@ Reglas obligatorias:
 - Los datos son sintéticos; nunca los presentes como desempeño real.
 - No uses data/synthetic ni data/validated. Power BI consume solamente data/marts.
 - No declares el dashboard terminado basándote sólo en una captura. Exige las validaciones de este documento.
-- No uses Git.
+- No realices operaciones Git desde este chat manual; el versionado se gestiona fuera de Power BI.
 
 Contexto fijo:
 
@@ -96,7 +96,7 @@ Contexto fijo:
 - QA de fuente: 93/93
 - QA de marts: 91/91
 - Tablas Parquet: 14
-- KPI contractuales: 17
+- Medidas: 17 KPI + 2 de soporte + 20 auxiliares = 39
 - Moneda: CLP neta de IVA
 - Zona horaria contractual: America/Santiago
 - Período base: 2025-08-01 a 2026-07-31
@@ -112,9 +112,9 @@ Empieza preguntándome por el checkpoint indicado. Si no indico uno, comienza en
 | PBI-00     | Archivo guardado y opciones base  | PASSED  | b2b_v1.pbix guardado; en Archivo actual, Auto date/time y las tres opciones de Relaciones están desactivadas; ValueFilterBehavior Independiente conservado. |
 | PBI-01     | 14 marts cargados desde pDataRoot | PASSED  | 14 tablas aplicadas sin errores y conteos reconciliados. PBIX guardado: 2.588.451 bytes, 2026-08-14 22:51:33.                                               |
 | PBI-02     | Modelo estrella con 34 relaciones | PASSED  | Validado en Power BI: 34 relaciones totales, 24 activas y 10 inactivas; sin relaciones para meta_run ni qa_results.                                         |
-| PBI-03     | 17 KPI y auxiliares reconciliados | PENDING | Pendiente                                                                                                                                                   |
-| PBI-04     | Cuatro páginas Core construidas   | PENDING | Pendiente                                                                                                                                                   |
-| PBI-05     | Refresh, experiencia y aceptación | PENDING | Pendiente                                                                                                                                                   |
+| PBI-03     | 39 medidas creadas y reconciliadas | PASSED | 17 KPI, 2 medidas de soporte y 20 auxiliares; sin errores DAX; QA Failed Gates=0, QA Status=passed; pruebas sin filtro y con SKU reconciliadas. |
+| PBI-04     | Cuatro páginas Core construidas   | IN_PROGRESS | Las cuatro páginas están funcionales y guardadas. Executive y Customer 360 tienen revisión visual final; quedan ajustes menores en Service & Inventory y Profitability & Geography. |
+| PBI-05     | Refresh, experiencia y aceptación | PENDING | Falta refresh final desde marts, recorrido interactivo completo, verificación de drill-through, exportación PBIP/PBIR y evidencia final. |
 
 Estados válidos:
 
@@ -123,6 +123,9 @@ Estados válidos:
 - PASSED: evidencia reconciliada.
 - FAILED: existe error o diferencia pendiente.
 - BLOCKED: requiere una decisión o recurso no disponible.
+
+Estado de release: `RELEASE_CANDIDATE`. No crear el tag ni el GitHub Release
+`v1.0.0` hasta que PBI-04 y PBI-05 estén en `PASSED`.
 
 ## 5. Fuente aprobada y controles
 
@@ -752,7 +755,7 @@ Comprobar todos los valores de la sección 5.3.
 
 Pruebas de filtro obligatorias:
 
-1. Sin filtros, los 17 KPI reconcilian.
+1. Sin filtros, los 17 KPI y las 2 medidas de soporte reconcilian.
 2. Seleccionar un SKU:
    - MC_CTS devuelve BLANK;
    - OTIF no cambia;
@@ -1047,7 +1050,7 @@ PASS sólo si existen exactamente las cuatro páginas y cada una responde su pre
 
 ### 11.2 Medidas
 
-- 17 KPI documentados.
+- 17 KPI, 2 medidas de soporte y 20 auxiliares documentados.
 - Moneda dentro de 0,01 CLP.
 - Cantidades dentro de 0,001.
 - Ratios dentro de 1e-9.
@@ -1296,3 +1299,4 @@ Documentación oficial Microsoft:
 |2026-08-16|3.11|PBI-04|IN_PROGRESS|Customer 360 validada visualmente: selector y mensaje dinámico visibles, nueve KPI en cuadrícula 5+4 sin recortes, economía temporal corregida, mix SKU, tabla de servicio y metadata en dos columnas legibles.|
 |2026-08-16|3.12|PBI-04|IN_PROGRESS|Service & Inventory revisada visualmente: layout de filtros, KPI, cumplimiento, Fill Rate, matriz de stockout, inventario, mix y metadata es correcto. Queda sólo un ajuste menor de tamaño para evitar el recorte del Dataset Build ID.|
 |2026-08-16|3.13|PBI-04|IN_PROGRESS|Profitability & Geography revisada visualmente: filtros, hero, barras, dispersión, mapa ArcGIS, tabla y metadata están presentes y sin error. Quedan ajustes de layout: ampliar tabla y mover metadata a una fila inferior de ancho completo para evitar recortes.|
+|2026-08-16|3.14|RELEASE|IN_PROGRESS|Se sincroniza el estado real como RELEASE_CANDIDATE: PBI-03 queda PASSED con 39 medidas; PBI-04 conserva ajustes visuales menores y PBI-05 requiere refresh, recorrido interactivo, drill-through, exportación PBIP/PBIR y evidencia final.|

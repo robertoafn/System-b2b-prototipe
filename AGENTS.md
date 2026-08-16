@@ -1,11 +1,11 @@
 ---
 doc_id: "MVP-D04"
-title: "Codex Operating Contract — V1.0 Core"
-version: "0.1"
+title: "Repository Operating Contract — V1.0 Core"
+version: "0.2"
 status: "approved"
 type: "operating_contract"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-16"
 depends_on:
   - "MVP-D00"
   - "MVP-D01"
@@ -13,7 +13,7 @@ depends_on:
   - "MVP-D03"
 ---
 
-# Codex Operating Contract — V1.0 Core
+# Repository Operating Contract — V1.0 Core
 
 ## 1. Propósito
 
@@ -61,23 +61,28 @@ Si código, pruebas y contrato discrepan:
 
 Cambiar un grain, PK, FK, campo, fórmula, restricción o rol de fecha exige aprobación del contrato correspondiente.
 
-## 3. Estado y prohibición de Git
+## 3. Estado de release y control de versiones
 
 ```yaml
 target_release: "V1.0"
-release_status: "PRE_RELEASE"
-implementation_mode: "local_codex_step_by_step"
-git_policy: "DISABLED_UNTIL_V1_0_APPROVAL"
+release_status: "RELEASE_CANDIDATE"
+implementation_mode: "local_step_by_step"
+git_policy: "ENABLED_BY_USER_AFTER_V1_0_APPROVAL"
 ```
 
-Hasta que el usuario apruebe la consolidación V1.0:
+El usuario aprobó la consolidación para iniciar Git y publicar el repositorio. Desde
+2026-08-16:
 
-- no ejecutar comandos Git;
-- no crear repositorios, commits, ramas ni tags;
-- no utilizar Git para restaurar, comparar o borrar archivos;
-- no asumir que V1.0 está aprobada por el solo hecho de pasar pruebas.
+- Git puede usarse para ramas, commits, revisión y publicación;
+- todo cambio debe preservar contratos, evidencia y cambios ajenos;
+- no crear el tag ni el GitHub Release `v1.0.0` hasta cerrar los gates PBI-04 y
+  PBI-05;
+- la existencia de un repositorio público no equivale a la aceptación final del
+  release.
 
-Incluso después de aprobar V1.0, comenzar a usar Git requiere una instrucción explícita adicional del usuario.
+El estado real es `RELEASE_CANDIDATE`: el pipeline, los datos, los marts, los
+controles y el dashboard funcional existen; falta cerrar la evidencia visual,
+refresh final y exportación versionable de Power BI.
 
 ## 4. Forma de trabajo
 
@@ -325,19 +330,29 @@ La Definition of Done del release completo es la de D00. Ningún agente puede pr
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "PRE_RELEASE"
-  stage: "IMPLEMENTATION"
-  current_work_item: "MVP-I01"
-  name: "EXECUTABLE FOUNDATION"
-  status: "NOT_STARTED"
+  release_status: "RELEASE_CANDIDATE"
+  stage: "RELEASE_HARDENING"
+  current_work_item: "V1.0-CLOSEOUT"
+  name: "PIPELINE, DOCUMENTATION, CI AND POWER BI ACCEPTANCE"
+  status: "IN_PROGRESS"
   completed:
     - "MVP-D00"
     - "MVP-D01"
     - "MVP-D02"
     - "MVP-D03"
     - "MVP-D04"
-  next: "SYNTHETIC GENERATOR"
-  blockers: []
+    - "MVP-I01"
+    - "MVP-I02"
+    - "MVP-I03"
+    - "MVP-I04"
+    - "PBI-00"
+    - "PBI-01"
+    - "PBI-02"
+    - "PBI-03"
+  next: "PBI-04 final visual proof; PBI-05 refresh and PBIP export"
+  blockers:
+    - "PBIX to PBIP/PBIR conversion requires Power BI Desktop Save As"
+    - "Final Power BI acceptance evidence remains manual"
 ```
 
 ## 15. Registro de cambios
@@ -345,3 +360,4 @@ PROJECT_PROGRESS:
 |Fecha|Versión documento|Estado|Cambio|
 |---|---|---|---|
 |2026-08-13|0.1|approved|Se aprueba el contrato operativo para traducir D00–D03 a una implementación reproducible, validada y sin Git hasta V1.0.|
+|2026-08-16|0.2|approved|Se sincroniza el estado RELEASE_CANDIDATE, se habilita Git por autorización del usuario y se registran los gates técnicos cerrados y los gates Power BI pendientes.|

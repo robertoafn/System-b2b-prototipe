@@ -11,8 +11,13 @@
 
 # Power BI temporary lock files
 /powerbi/~$*
+/powerbi/source/export/**/.pbi/
 
-# Documentation is private except the manual chat instructions
+# Publish only the approved, sanitized contracts and manual chat instructions
 /docs/*
+!/docs/PROJECT-CONTROL.md
+!/docs/MVP-SPEC.md
+!/docs/DATA-CONTRACT.md
+!/docs/KPI-POWERBI-SPEC.md
 !/docs/chats_instruction/
 !/docs/chats_instruction/**
