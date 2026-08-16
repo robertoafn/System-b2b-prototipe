@@ -1,0 +1,226 @@
+createOrReplace
+
+    ref table '_Measures'
+
+        measure 'Net Sales' = SUM ( 'fact_orders'[recognized_net_sales] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure 'Variable Product Cost' = SUM ( 'fact_orders'[variable_product_cost] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure 'Contribution Margin' = [Net Sales] - [Variable Product Cost]
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure CTS = SUM ( 'fact_orders'[cts_amount] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure MC_CTS =
+                IF (
+                    ISCROSSFILTERED ( 'dim_product'[product_key] ),
+                    BLANK (),
+                    [Contribution Margin] - [CTS]
+                )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure 'Average Order Value' = DIVIDE ( [Net Sales], [Orders] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure Orders = DISTINCTCOUNT ( 'fact_orders'[order_id] )
+            formatString: #,0
+            displayFolder: Commercial
+
+        measure 'Customer Frequency' = DIVIDE ( [Orders], [Customers] )
+            formatString: #,0.00
+            displayFolder: Commercial
+
+        measure Customers = DISTINCTCOUNT ( 'fact_orders'[customer_key] )
+            formatString: #,0
+            displayFolder: Commercial
+
+        measure 'Eligible Orders' =
+                CALCULATE (
+                    COUNTROWS ( 'fact_orders' ),
+                    'fact_orders'[eligible_order_flag] = TRUE (),
+                    USERELATIONSHIP ( 'dim_date'[date_key], 'fact_orders'[promised_date_key] )
+                )
+            formatString: #,0
+            displayFolder: Service
+
+        measure 'OTIF Orders' =
+                CALCULATE (
+                    COUNTROWS ( 'fact_orders' ),
+                    'fact_orders'[eligible_order_flag] = TRUE (),
+                    'fact_orders'[order_otif_flag] = TRUE (),
+                    USERELATIONSHIP ( 'dim_date'[date_key], 'fact_orders'[promised_date_key] )
+                )
+            formatString: #,0
+            displayFolder: Service
+
+        measure OTIF = DIVIDE ( [OTIF Orders], [Eligible Orders] )
+            formatString: 0.0%
+            displayFolder: Service
+
+        measure 'Fill Rate' =
+                CALCULATE (
+                    DIVIDE (
+                        SUM ( 'fact_order_lines'[delivered_quantity] ),
+                        SUM ( 'fact_order_lines'[ordered_quantity] )
+                    ),
+                    USERELATIONSHIP (
+                        'dim_date'[date_key],
+                        'fact_order_lines'[promised_date_key]
+                    )
+                )
+            formatString: 0.0%
+            displayFolder: Service
+
+        measure 'Order-to-Delivery Lead Time' =
+                CALCULATE (
+                    AVERAGE ( 'fact_orders'[lead_time_hours] ),
+                    'fact_orders'[in_full_flag] = TRUE (),
+                    USERELATIONSHIP ( 'dim_date'[date_key], 'fact_orders'[promised_date_key] )
+                )
+            formatString: #,0.00
+            displayFolder: Service
+
+        measure 'Stockout Rate' =
+                DIVIDE (
+                    CALCULATE (
+                        COUNTROWS ( 'fact_inventory' ),
+                        'fact_inventory'[is_stockout] = TRUE ()
+                    ),
+                    COUNTROWS ( 'fact_inventory' )
+                )
+            formatString: 0.0%
+            displayFolder: Inventory
+
+        measure 'Available Inventory EOP' =
+                VAR LastVisibleDateKey = MAX ( 'dim_date'[date_key] )
+                RETURN
+                    CALCULATE (
+                        SUM ( 'fact_inventory'[available_quantity] ),
+                        'fact_inventory'[snapshot_date_key] = LastVisibleDateKey
+                    )
+            formatString: #,0.000
+            displayFolder: Inventory
+
+        measure 'Delivery Distance' = SUM ( 'fact_deliveries'[distance_km] )
+            formatString: #,0.000
+            displayFolder: Logistics
+
+        measure 'Transport Cost' =
+                CALCULATE (
+                    SUM ( 'fact_cost_to_serve'[cost_amount] ),
+                    'fact_cost_to_serve'[cost_type] = "transport"
+                )
+            formatString: #,0.00
+            displayFolder: Logistics
+
+        measure 'Vehicle Utilization' = AVERAGE ( 'fact_deliveries'[delivery_utilization] )
+            formatString: 0.0%
+            displayFolder: Logistics
+
+        measure 'Net Sales by SKU' = SUM ( 'fact_delivery_lines'[recognized_net_sales] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure 'Contribution Margin by SKU' = SUM ( 'fact_delivery_lines'[contribution_margin] )
+            formatString: #,0.00
+            displayFolder: Economic
+
+        measure 'Ordered Quantity' = SUM ( 'fact_order_lines'[ordered_quantity] )
+            formatString: #,0.000
+            displayFolder: Service
+
+        measure 'Delivered Quantity' = SUM ( 'fact_order_lines'[delivered_quantity] )
+            formatString: #,0.000
+            displayFolder: Service
+
+        measure 'Orders by Promised Date' =
+                CALCULATE (
+                    [Orders],
+                    USERELATIONSHIP ( 'dim_date'[date_key], 'fact_orders'[promised_date_key] )
+                )
+            formatString: #,0
+            displayFolder: Service
+
+        measure 'Available Inventory' = SUM ( 'fact_inventory'[available_quantity] )
+            formatString: #,0.000
+            displayFolder: Inventory
+
+        measure 'Safety Stock' = SUM ( 'fact_inventory'[safety_stock_quantity] )
+            formatString: #,0.000
+            displayFolder: Inventory
+
+        measure 'Reorder Point' = SUM ( 'fact_inventory'[reorder_point_quantity] )
+            formatString: #,0.000
+            displayFolder: Inventory
+
+        measure 'Weight Utilization' = AVERAGE ( 'fact_deliveries'[weight_utilization] )
+            formatString: 0.0%
+            displayFolder: Logistics
+
+        measure 'Volume Utilization' = AVERAGE ( 'fact_deliveries'[volume_utilization] )
+            formatString: 0.0%
+            displayFolder: Logistics
+
+        measure 'Order Fill Rate (Detail)' =
+                DIVIDE (
+                    SUM ( 'fact_orders'[delivered_quantity] ),
+                    SUM ( 'fact_orders'[ordered_quantity] )
+                )
+            formatString: 0.0%
+            displayFolder: Service
+
+        measure 'Promised Date (Detail)' =
+                VAR DateKey = SELECTEDVALUE ( 'fact_orders'[promised_date_key] )
+                RETURN
+                    LOOKUPVALUE ( 'dim_date'[date], 'dim_date'[date_key], DateKey )
+            formatString: dd-MM-yyyy
+            displayFolder: Service
+
+        measure 'Completion Date (Detail)' =
+                VAR DateKey = SELECTEDVALUE ( 'fact_orders'[completion_date_key] )
+                RETURN
+                    LOOKUPVALUE ( 'dim_date'[date], 'dim_date'[date_key], DateKey )
+            formatString: dd-MM-yyyy
+            displayFolder: Service
+
+        measure 'QA Failed Gates' =
+                CALCULATE (
+                    COUNTROWS ( 'qa_results' ),
+                    'qa_results'[status] <> "passed"
+                )
+            formatString: #,0
+            displayFolder: Quality
+
+        measure 'QA Status' = IF ( [QA Failed Gates] = 0, "passed", "failed" )
+            displayFolder: Quality
+
+        measure 'Dataset Build ID' = SELECTEDVALUE ( 'meta_run'[dataset_build_id] )
+            displayFolder: Quality
+
+        measure 'Last Successful Execution' = SELECTEDVALUE ( 'meta_run'[validated_at] )
+            displayFolder: Quality
+
+        measure 'Max Available Date' = SELECTEDVALUE ( 'meta_run'[max_available_date] )
+            formatString: dd-MM-yyyy
+            displayFolder: Quality
+
+        measure 'Customer Selection Valid' = INT ( HASONEVALUE ( 'dim_customer'[customer_key] ) )
+            formatString: 0
+            displayFolder: Quality
+
+        measure 'Customer 360 Message' =
+                IF (
+                    [Customer Selection Valid] = 1,
+                    "Cliente: " & SELECTEDVALUE ( 'dim_customer'[customer_name] ),
+                    "Seleccione exactamente un cliente para habilitar Customer 360"
+                )
+            displayFolder: Quality

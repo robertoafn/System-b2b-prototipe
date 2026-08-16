@@ -142,6 +142,13 @@ def test_publication_is_repeatable_and_emits_complete_evidence(
     assert first.published and second.published
     assert first.mart_hashes == second.mart_hashes
     assert set(first.mart_hashes) == set(MART_TABLES)
+    first_run_manifest = json.loads(
+        (first_manifest / "run_manifest.json").read_text(encoding="utf-8")
+    )
+    expected_deterministic_hash = first_run_manifest["artifacts"][
+        "marts_deterministic_combined_sha256"
+    ]
+    assert len(expected_deterministic_hash) == 64
     report = json.loads(
         (first_manifest / "marts_quality_report.json").read_text(encoding="utf-8")
     )

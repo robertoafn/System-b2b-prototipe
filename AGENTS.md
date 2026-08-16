@@ -1,11 +1,11 @@
 ---
 doc_id: "MVP-D04"
-title: "Codex Operating Contract — V1.0 Core"
-version: "0.1"
+title: "Repository Operating Contract — V1.0 Core"
+version: "0.3"
 status: "approved"
 type: "operating_contract"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-16"
 depends_on:
   - "MVP-D00"
   - "MVP-D01"
@@ -13,7 +13,7 @@ depends_on:
   - "MVP-D03"
 ---
 
-# Codex Operating Contract — V1.0 Core
+# Repository Operating Contract — V1.0 Core
 
 ## 1. Propósito
 
@@ -61,23 +61,27 @@ Si código, pruebas y contrato discrepan:
 
 Cambiar un grain, PK, FK, campo, fórmula, restricción o rol de fecha exige aprobación del contrato correspondiente.
 
-## 3. Estado y prohibición de Git
+## 3. Estado de release y control de versiones
 
 ```yaml
 target_release: "V1.0"
-release_status: "PRE_RELEASE"
-implementation_mode: "local_codex_step_by_step"
-git_policy: "DISABLED_UNTIL_V1_0_APPROVAL"
+release_status: "V1.0"
+implementation_mode: "local_step_by_step"
+git_policy: "ENABLED_BY_USER_AFTER_V1_0_APPROVAL"
 ```
 
-Hasta que el usuario apruebe la consolidación V1.0:
+El usuario aprobó la consolidación para iniciar Git y publicar el repositorio. Desde
+2026-08-16:
 
-- no ejecutar comandos Git;
-- no crear repositorios, commits, ramas ni tags;
-- no utilizar Git para restaurar, comparar o borrar archivos;
-- no asumir que V1.0 está aprobada por el solo hecho de pasar pruebas.
+- Git puede usarse para ramas, commits, revisión y publicación;
+- todo cambio debe preservar contratos, evidencia y cambios ajenos;
+- el tag y GitHub Release `v1.0.0` pueden crearse después de integrar el commit
+  validado en `main`;
+- cualquier ampliación funcional posterior requiere un contrato nuevo.
 
-Incluso después de aprobar V1.0, comenzar a usar Git requiere una instrucción explícita adicional del usuario.
+El usuario aceptó explícitamente el 2026-08-16 el PBIX construido manualmente en
+Power BI Desktop y promovió el release a `V1.0`. PBIP/PBIR queda como mejora de
+versionado posterior; el artefacto ejecutable aceptado de V1.0 es el PBIX.
 
 ## 4. Forma de trabajo
 
@@ -325,18 +329,28 @@ La Definition of Done del release completo es la de D00. Ningún agente puede pr
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "PRE_RELEASE"
-  stage: "IMPLEMENTATION"
-  current_work_item: "MVP-I01"
-  name: "EXECUTABLE FOUNDATION"
-  status: "NOT_STARTED"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  name: "V1.0 CORE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
     - "MVP-D02"
     - "MVP-D03"
     - "MVP-D04"
-  next: "SYNTHETIC GENERATOR"
+    - "MVP-I01"
+    - "MVP-I02"
+    - "MVP-I03"
+    - "MVP-I04"
+    - "PBI-00"
+    - "PBI-01"
+    - "PBI-02"
+    - "PBI-03"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
   blockers: []
 ```
 
@@ -345,3 +359,5 @@ PROJECT_PROGRESS:
 |Fecha|Versión documento|Estado|Cambio|
 |---|---|---|---|
 |2026-08-13|0.1|approved|Se aprueba el contrato operativo para traducir D00–D03 a una implementación reproducible, validada y sin Git hasta V1.0.|
+|2026-08-16|0.2|approved|Se sincroniza el estado RELEASE_CANDIDATE, se habilita Git por autorización del usuario y se registran los gates técnicos cerrados y los gates Power BI pendientes.|
+|2026-08-16|0.3|approved|El usuario acepta el PBIX construido manualmente, cierra PBI-04/PBI-05 y promueve el release a V1.0; PBIP/PBIR queda como mejora posterior.|

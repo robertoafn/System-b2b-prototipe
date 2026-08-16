@@ -1,0 +1,94 @@
+{
+  "contract_version": "1.0.0",
+  "release_status": "V1.0",
+  "dataset_build_id": "BLD-9102B6E8BF1ABFFC5F32",
+  "data_source": "data/marts",
+  "data_class": "synthetic",
+  "model": {
+    "loaded_tables": 14,
+    "dimensions": [
+      "dim_customer",
+      "dim_product",
+      "dim_location",
+      "dim_operational_site",
+      "dim_vehicle",
+      "dim_date"
+    ],
+    "facts": [
+      "fact_orders",
+      "fact_order_lines",
+      "fact_deliveries",
+      "fact_delivery_lines",
+      "fact_inventory",
+      "fact_cost_to_serve"
+    ],
+    "technical_tables": ["meta_run", "qa_results"],
+    "measure_table": "_Measures",
+    "measures": {
+      "kpi": 17,
+      "support": 2,
+      "auxiliary": 20,
+      "total": 39
+    }
+  },
+  "relationships": [
+    {"from": "dim_customer.customer_key", "to": "fact_orders.customer_key", "active": true},
+    {"from": "dim_customer.customer_key", "to": "fact_order_lines.customer_key", "active": true},
+    {"from": "dim_customer.customer_key", "to": "fact_deliveries.customer_key", "active": true},
+    {"from": "dim_customer.customer_key", "to": "fact_delivery_lines.customer_key", "active": true},
+    {"from": "dim_customer.customer_key", "to": "fact_cost_to_serve.customer_key", "active": true},
+    {"from": "dim_product.product_key", "to": "fact_order_lines.product_key", "active": true},
+    {"from": "dim_product.product_key", "to": "fact_delivery_lines.product_key", "active": true},
+    {"from": "dim_product.product_key", "to": "fact_inventory.product_key", "active": true},
+    {"from": "dim_location.location_key", "to": "fact_orders.location_key", "active": true},
+    {"from": "dim_location.location_key", "to": "fact_deliveries.location_key", "active": true},
+    {"from": "dim_location.location_key", "to": "fact_delivery_lines.location_key", "active": true},
+    {"from": "dim_location.location_key", "to": "fact_cost_to_serve.location_key", "active": true},
+    {"from": "dim_operational_site.site_key", "to": "fact_deliveries.site_key", "active": true},
+    {"from": "dim_operational_site.site_key", "to": "fact_delivery_lines.site_key", "active": true},
+    {"from": "dim_operational_site.site_key", "to": "fact_inventory.site_key", "active": true},
+    {"from": "dim_vehicle.vehicle_key", "to": "fact_deliveries.vehicle_key", "active": true},
+    {"from": "dim_vehicle.vehicle_key", "to": "fact_delivery_lines.vehicle_key", "active": true},
+    {"from": "dim_vehicle.vehicle_key", "to": "fact_cost_to_serve.vehicle_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_orders.order_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_orders.promised_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_orders.completion_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_order_lines.order_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_order_lines.promised_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_deliveries.delivery_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_deliveries.order_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_deliveries.dispatch_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_deliveries.promised_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_delivery_lines.order_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_delivery_lines.delivery_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_delivery_lines.promised_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_inventory.snapshot_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_cost_to_serve.order_date_key", "active": true},
+    {"from": "dim_date.date_key", "to": "fact_cost_to_serve.activity_date_key", "active": false},
+    {"from": "dim_date.date_key", "to": "fact_cost_to_serve.delivery_date_key", "active": false}
+  ],
+  "relationship_rules": {
+    "cardinality": "one-to-many",
+    "filter_direction": "single",
+    "many_to_many": 0,
+    "bidirectional": 0,
+    "fact_to_fact": 0,
+    "active": 24,
+    "inactive": 10,
+    "total": 34
+  },
+  "pages": [
+    "Executive",
+    "Customer 360",
+    "Service & Inventory",
+    "Profitability & Geography"
+  ],
+  "release_gates": {
+    "PBI-00": "PASSED",
+    "PBI-01": "PASSED",
+    "PBI-02": "PASSED",
+    "PBI-03": "PASSED",
+    "PBI-04": "PASSED",
+    "PBI-05": "PASSED"
+  }
+}
