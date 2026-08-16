@@ -1,6 +1,6 @@
 {
-  "contract_version": "1.0-rc.1",
-  "release_status": "RELEASE_CANDIDATE",
+  "contract_version": "1.0.0",
+  "release_status": "V1.0",
   "dataset_build_id": "BLD-9102B6E8BF1ABFFC5F32",
   "data_source": "data/marts",
   "data_class": "synthetic",
@@ -88,7 +88,7 @@
     "PBI-01": "PASSED",
     "PBI-02": "PASSED",
     "PBI-03": "PASSED",
-    "PBI-04": "IN_PROGRESS",
-    "PBI-05": "PENDING"
+    "PBI-04": "PASSED",
+    "PBI-05": "PASSED"
   }
 }

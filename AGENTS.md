@@ -1,7 +1,7 @@
 ---
 doc_id: "MVP-D04"
 title: "Repository Operating Contract — V1.0 Core"
-version: "0.2"
+version: "0.3"
 status: "approved"
 type: "operating_contract"
 created: "2026-08-13"
@@ -65,7 +65,7 @@ Cambiar un grain, PK, FK, campo, fórmula, restricción o rol de fecha exige apr
 
 ```yaml
 target_release: "V1.0"
-release_status: "RELEASE_CANDIDATE"
+release_status: "V1.0"
 implementation_mode: "local_step_by_step"
 git_policy: "ENABLED_BY_USER_AFTER_V1_0_APPROVAL"
 ```
@@ -75,14 +75,13 @@ El usuario aprobó la consolidación para iniciar Git y publicar el repositorio.
 
 - Git puede usarse para ramas, commits, revisión y publicación;
 - todo cambio debe preservar contratos, evidencia y cambios ajenos;
-- no crear el tag ni el GitHub Release `v1.0.0` hasta cerrar los gates PBI-04 y
-  PBI-05;
-- la existencia de un repositorio público no equivale a la aceptación final del
-  release.
+- el tag y GitHub Release `v1.0.0` pueden crearse después de integrar el commit
+  validado en `main`;
+- cualquier ampliación funcional posterior requiere un contrato nuevo.
 
-El estado real es `RELEASE_CANDIDATE`: el pipeline, los datos, los marts, los
-controles y el dashboard funcional existen; falta cerrar la evidencia visual,
-refresh final y exportación versionable de Power BI.
+El usuario aceptó explícitamente el 2026-08-16 el PBIX construido manualmente en
+Power BI Desktop y promovió el release a `V1.0`. PBIP/PBIR queda como mejora de
+versionado posterior; el artefacto ejecutable aceptado de V1.0 es el PBIX.
 
 ## 4. Forma de trabajo
 
@@ -330,11 +329,11 @@ La Definition of Done del release completo es la de D00. Ningún agente puede pr
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "RELEASE_CANDIDATE"
-  stage: "RELEASE_HARDENING"
-  current_work_item: "V1.0-CLOSEOUT"
-  name: "PIPELINE, DOCUMENTATION, CI AND POWER BI ACCEPTANCE"
-  status: "IN_PROGRESS"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  name: "V1.0 CORE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
@@ -349,10 +348,10 @@ PROJECT_PROGRESS:
     - "PBI-01"
     - "PBI-02"
     - "PBI-03"
-  next: "PBI-04 final visual proof; PBI-05 refresh and PBIP export"
-  blockers:
-    - "PBIX to PBIP/PBIR conversion requires Power BI Desktop Save As"
-    - "Final Power BI acceptance evidence remains manual"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
+  blockers: []
 ```
 
 ## 15. Registro de cambios
@@ -361,3 +360,4 @@ PROJECT_PROGRESS:
 |---|---|---|---|
 |2026-08-13|0.1|approved|Se aprueba el contrato operativo para traducir D00–D03 a una implementación reproducible, validada y sin Git hasta V1.0.|
 |2026-08-16|0.2|approved|Se sincroniza el estado RELEASE_CANDIDATE, se habilita Git por autorización del usuario y se registran los gates técnicos cerrados y los gates Power BI pendientes.|
+|2026-08-16|0.3|approved|El usuario acepta el PBIX construido manualmente, cierra PBI-04/PBI-05 y promueve el release a V1.0; PBIP/PBIR queda como mejora posterior.|

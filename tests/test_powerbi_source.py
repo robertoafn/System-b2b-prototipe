@@ -15,7 +15,7 @@ def test_powerbi_model_contract_counts_and_rules() -> None:
     )
     relationships = contract["relationships"]
 
-    assert contract["release_status"] == "RELEASE_CANDIDATE"
+    assert contract["release_status"] == "V1.0"
     assert len(relationships) == 34
     assert sum(item["active"] for item in relationships) == 24
     assert sum(not item["active"] for item in relationships) == 10
@@ -35,6 +35,7 @@ def test_powerbi_model_contract_counts_and_rules() -> None:
         "Service & Inventory",
         "Profitability & Geography",
     ]
+    assert set(contract["release_gates"].values()) == {"PASSED"}
 
 
 def test_powerbi_tmdl_contains_39_unique_measures() -> None:

@@ -1,8 +1,8 @@
 ---
 doc_id: "PBI-CHAT-01"
 title: "Guía interactiva ChatGPT + Power BI — V1.0 Core"
-version: "3.14"
-status: "release_candidate_manual_validation"
+version: "3.15"
+status: "released_v1_0_0"
 created: "2026-08-14"
 updated: "2026-08-16"
 depends_on:
@@ -113,8 +113,8 @@ Empieza preguntándome por el checkpoint indicado. Si no indico uno, comienza en
 | PBI-01     | 14 marts cargados desde pDataRoot | PASSED  | 14 tablas aplicadas sin errores y conteos reconciliados. PBIX guardado: 2.588.451 bytes, 2026-08-14 22:51:33.                                               |
 | PBI-02     | Modelo estrella con 34 relaciones | PASSED  | Validado en Power BI: 34 relaciones totales, 24 activas y 10 inactivas; sin relaciones para meta_run ni qa_results.                                         |
 | PBI-03     | 39 medidas creadas y reconciliadas | PASSED | 17 KPI, 2 medidas de soporte y 20 auxiliares; sin errores DAX; QA Failed Gates=0, QA Status=passed; pruebas sin filtro y con SKU reconciliadas. |
-| PBI-04     | Cuatro páginas Core construidas   | IN_PROGRESS | Las cuatro páginas están funcionales y guardadas. Executive y Customer 360 tienen revisión visual final; quedan ajustes menores en Service & Inventory y Profitability & Geography. |
-| PBI-05     | Refresh, experiencia y aceptación | PENDING | Falta refresh final desde marts, recorrido interactivo completo, verificación de drill-through, exportación PBIP/PBIR y evidencia final. |
+| PBI-04     | Cuatro páginas Core construidas   | PASSED | Las cuatro páginas están funcionales, guardadas y documentadas con capturas; el usuario acepta el resultado manual de Power BI Desktop para V1.0. |
+| PBI-05     | Refresh, experiencia y aceptación | PASSED | El usuario confirma y acepta el PBIX construido y guardado manualmente en Power BI Desktop como artefacto final de V1.0. |
 
 Estados válidos:
 
@@ -124,8 +124,8 @@ Estados válidos:
 - FAILED: existe error o diferencia pendiente.
 - BLOCKED: requiere una decisión o recurso no disponible.
 
-Estado de release: `RELEASE_CANDIDATE`. No crear el tag ni el GitHub Release
-`v1.0.0` hasta que PBI-04 y PBI-05 estén en `PASSED`.
+Estado de release: `V1.0`. PBI-04 y PBI-05 están en `PASSED` por aceptación
+explícita del usuario; corresponde publicar el tag y GitHub Release `v1.0.0`.
 
 ## 5. Fuente aprobada y controles
 
@@ -1300,3 +1300,4 @@ Documentación oficial Microsoft:
 |2026-08-16|3.12|PBI-04|IN_PROGRESS|Service & Inventory revisada visualmente: layout de filtros, KPI, cumplimiento, Fill Rate, matriz de stockout, inventario, mix y metadata es correcto. Queda sólo un ajuste menor de tamaño para evitar el recorte del Dataset Build ID.|
 |2026-08-16|3.13|PBI-04|IN_PROGRESS|Profitability & Geography revisada visualmente: filtros, hero, barras, dispersión, mapa ArcGIS, tabla y metadata están presentes y sin error. Quedan ajustes de layout: ampliar tabla y mover metadata a una fila inferior de ancho completo para evitar recortes.|
 |2026-08-16|3.14|RELEASE|IN_PROGRESS|Se sincroniza el estado real como RELEASE_CANDIDATE: PBI-03 queda PASSED con 39 medidas; PBI-04 conserva ajustes visuales menores y PBI-05 requiere refresh, recorrido interactivo, drill-through, exportación PBIP/PBIR y evidencia final.|
+|2026-08-16|3.15|RELEASE|PASSED|El usuario acepta explícitamente el archivo PBIX construido manualmente en Power BI Desktop, cierra PBI-04/PBI-05 y autoriza declarar y publicar v1.0.0.|

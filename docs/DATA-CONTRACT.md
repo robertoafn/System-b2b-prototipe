@@ -1,7 +1,7 @@
 ---
 doc_id: "MVP-D02"
 title: "V1.0 Core Data Contract"
-version: "0.3"
+version: "0.4"
 status: "approved"
 type: "data_specification"
 created: "2026-08-13"
@@ -999,10 +999,10 @@ requiere modificar explícitamente este documento.
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "RELEASE_CANDIDATE"
-  stage: "RELEASE_HARDENING"
-  current_work_item: "V1.0-CLOSEOUT"
-  status: "IN_PROGRESS"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
@@ -1017,9 +1017,10 @@ PROJECT_PROGRESS:
     - "PBI-01"
     - "PBI-02"
     - "PBI-03"
-  next: "PBI-04 final visual proof and PBI-05 acceptance"
-  blockers:
-    - "Power BI Desktop must export PBIP/PBIR"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
+  blockers: []
 ```
 
 ---
@@ -1031,3 +1032,4 @@ PROJECT_PROGRESS:
 |2026-08-13|0.1|draft|Contrato ampliado por el usuario desde el borrador incompleto.|
 |2026-08-13|0.2|approved|Se reconcilia y aprueba contra D00/D01: sitios, entregas múltiples, líneas de entrega, reconocimiento por cantidad entregada, manifiesto, calidad y reproducibilidad V1.0.|
 |2026-08-16|0.3|approved|Se sincroniza el estado RELEASE_CANDIDATE sin alterar grains, claves, campos, restricciones ni semántica económica.|
+|2026-08-16|0.4|approved|Se promueve el contrato implementado a V1.0 por aceptación explícita del usuario, sin cambios semánticos adicionales.|

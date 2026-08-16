@@ -1,7 +1,7 @@
 ---
 doc_id: "MVP-D01"
 title: "V1.0 Core Specification"
-version: "0.3"
+version: "0.4"
 status: "approved"
 type: "specification"
 created: "2026-08-13"
@@ -653,10 +653,10 @@ Estas funciones podrán incorporarse después de aprobar V1.0 mediante nuevos co
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "RELEASE_CANDIDATE"
-  stage: "RELEASE_HARDENING"
-  current_work_item: "V1.0-CLOSEOUT"
-  status: "IN_PROGRESS"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
@@ -671,14 +671,15 @@ PROJECT_PROGRESS:
     - "PBI-01"
     - "PBI-02"
     - "PBI-03"
-  next: "PBI-04 final visual proof and PBI-05 acceptance"
-  blockers:
-    - "Power BI Desktop must export PBIP/PBIR"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
+  blockers: []
 ```
 
-La generación, validación, marts y construcción funcional de Power BI ya fueron
-ejecutadas. El trabajo pendiente es de aceptación y empaquetado de release; no se
-autoriza ampliar el alcance funcional de V1.0.
+La generación, validación, marts y construcción manual de Power BI fueron
+ejecutadas y aceptadas como V1.0. No se autoriza ampliar este alcance sin un
+contrato post-V1 explícito.
 
 ---
 
@@ -689,3 +690,4 @@ autoriza ampliar el alcance funcional de V1.0.
 |2026-08-13|0.1|draft|Borrador previo al trabajo con Codex.|
 |2026-08-13|0.2|approved|Se especifican y aprueban escenario base, cardinalidades funcionales, servicio, inventario, reconocimiento económico, reproducibilidad y aceptación de V1.0 Core.|
 |2026-08-16|0.3|approved|Se sincroniza la especificación con el estado RELEASE_CANDIDATE y el cierre de implementación, manteniendo pendientes los gates finales de Power BI.|
+|2026-08-16|0.4|approved|El usuario acepta el PBIX manual, cierra PBI-04/PBI-05 y promueve la especificación implementada a V1.0.|

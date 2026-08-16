@@ -1,7 +1,7 @@
 ---
 doc_id: "MVP-D03"
 title: "V1.0 KPI and Power BI Specification"
-version: "0.3"
+version: "0.4"
 status: "approved"
 type: "analytics_specification"
 created: "2026-08-13"
@@ -485,7 +485,8 @@ Python control value
 [ ] no existen visuales decorativos o sin pregunta de decisión
 ```
 
-No comenzar la construcción definitiva del `.pbix` antes de aprobar D03 y producir marts validados.
+La restricción de secuencia fue satisfecha: D03 se aprobó y los marts se validaron
+antes de construir manualmente el `.pbix` aceptado de V1.0.
 
 ---
 
@@ -494,10 +495,10 @@ No comenzar la construcción definitiva del `.pbix` antes de aprobar D03 y produ
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "RELEASE_CANDIDATE"
-  stage: "RELEASE_HARDENING"
-  current_work_item: "V1.0-CLOSEOUT"
-  status: "IN_PROGRESS"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
@@ -512,9 +513,10 @@ PROJECT_PROGRESS:
     - "PBI-01"
     - "PBI-02"
     - "PBI-03"
-  next: "PBI-04 final visual proof and PBI-05 acceptance"
-  blockers:
-    - "Power BI Desktop must export PBIP/PBIR"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
+  blockers: []
 ```
 
 ---
@@ -526,3 +528,4 @@ PROJECT_PROGRESS:
 |2026-08-13|0.1|draft|Borrador previo al trabajo con Codex.|
 |2026-08-13|0.2|approved|Se completa y aprueba modelo estrella, diccionario KPI, roles de fecha, filtros, páginas, diseño visual y acceptance de Power BI V1.0.|
 |2026-08-16|0.3|approved|Se registra la construcción y reconciliación de 17 KPI, 2 medidas de soporte y 20 auxiliares; el release permanece candidato hasta cerrar PBI-04 y PBI-05.|
+|2026-08-16|0.4|approved|El usuario acepta el PBIX construido manualmente, cierra PBI-04/PBI-05 y promueve el dashboard a V1.0.|

@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/robertoafn/System-b2b-prototipe/actions/workflows/ci.yml/badge.svg)](https://github.com/robertoafn/System-b2b-prototipe/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Release status](https://img.shields.io/badge/release-RELEASE__CANDIDATE-orange)
+![Release](https://img.shields.io/badge/release-v1.0.0-brightgreen)
 ![Data](https://img.shields.io/badge/data-100%25%20synthetic-blue)
 
 Sistema analítico B2B reproducible que conecta operación comercial, cumplimiento
@@ -10,9 +10,9 @@ logístico, inventario y cost-to-serve. Genera datos sintéticos deterministas,
 aplica contratos y controles de calidad, publica marts en esquema estrella y los
 expone en un dashboard Power BI de cuatro páginas.
 
-> **Estado:** `RELEASE_CANDIDATE`. El pipeline y los controles automáticos están
-> operativos. El tag `v1.0.0` se reserva hasta cerrar la evidencia visual, el
-> refresh final y la exportación PBIP/PBIR en Power BI Desktop.
+> **Estado:** `V1.0`. El usuario aceptó el PBIX construido manualmente en Power BI
+> Desktop como artefacto final; pipeline, controles, documentación y CI están
+> cerrados para el tag `v1.0.0`.
 
 ## Problema que resuelve
 
@@ -199,19 +199,16 @@ Orden de autoridad para agentes y LLM:
 - Los datos son sintéticos y no sirven como benchmark empresarial.
 - No incluye ERP, CRM, facturación, pagos, forecasting, routing ni optimización.
 - El mapa ArcGIS puede requerir conectividad y disponibilidad del visual.
-- Power BI Desktop debe convertir manualmente PBIX a PBIP; el repositorio incluye
-  un script TMDL de medidas y un contrato legible, pero todavía no una exportación
-  PBIR completa verificada.
-- Falta cerrar PBI-04 (ajustes visuales menores) y PBI-05 (refresh final,
-  experiencia, drill-through, PBIP/PBIR y evidencia final).
+- El artefacto Power BI aceptado de V1.0 es PBIX. El repositorio incluye un script
+  TMDL de medidas y un contrato legible; una exportación PBIP/PBIR completa queda
+  como mejora de versionado posterior.
 
 ## Próximos pasos posibles
 
-1. terminar PBI-04 y ejecutar el checklist PBI-05;
-2. guardar `b2b_v1.pbix` como PBIP con TMDL y PBIR desde Power BI Desktop;
-3. revisar y versionar el diff generado, excluyendo caches locales `.pbi`;
-4. promover el estado a `V1.0`, crear `v1.0.0` y publicar el GitHub Release;
-5. sólo después, abrir nuevos contratos para cualquier alcance post-V1.0.
+1. opcionalmente guardar `b2b_v1.pbix` como PBIP con TMDL y PBIR desde Power BI
+   Desktop;
+2. revisar y versionar el diff generado, excluyendo caches locales `.pbi`;
+3. abrir contratos nuevos antes de incorporar cualquier alcance post-V1.0.
 
 ## Licencia
 

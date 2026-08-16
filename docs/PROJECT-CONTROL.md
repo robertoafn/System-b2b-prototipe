@@ -1,7 +1,7 @@
 ---
 doc_id: "MVP-D00"
 title: "Project Control — V1.0"
-version: "0.3"
+version: "0.4"
 status: "approved"
 type: "governance"
 created: "2026-08-13"
@@ -29,14 +29,16 @@ El estado anterior de los documentos se considera **material de preparación**. 
 
 ```yaml
 target_release: "V1.0"
-release_status: "RELEASE_CANDIDATE"
-document_version: "0.2"
+release_status: "V1.0"
+document_version: "0.4"
 execution_environment: "local"
-implementation_mode: "codex_step_by_step"
-git_policy: "DISABLED_UNTIL_V1_0_APPROVAL"
+implementation_mode: "local_step_by_step"
+git_policy: "ENABLED_BY_USER_AFTER_V1_0_APPROVAL"
 ```
 
-`V1.0` se declarará únicamente cuando se cumpla la Definition of Done de este documento. La existencia de avances parciales no promueve automáticamente el release.
+`V1.0` se declaró después de cumplir la evidencia técnica y recibir la aceptación
+explícita del usuario. Los avances parciales anteriores no promovieron
+automáticamente el release.
 
 ### 1.2 Precedencia documental
 
@@ -456,9 +458,9 @@ La trazabilidad técnica se conserva mediante:
 - hashes SHA-256 de artefactos consolidados;
 - aprobación explícita de cada gate.
 
-La autorización para Git no promueve por sí sola el estado a `V1.0`. Mientras
-PBI-04 y PBI-05 conserven evidencia pendiente, el estado es
-`RELEASE_CANDIDATE`.
+La autorización para Git no promovió por sí sola el release. La promoción a
+`V1.0` ocurrió después de la validación técnica y de la aceptación explícita del
+PBIX por el usuario el 2026-08-16.
 
 
 ---
@@ -523,10 +525,10 @@ Customer
 ```yaml
 PROJECT_PROGRESS:
   target_release: "V1.0"
-  release_status: "RELEASE_CANDIDATE"
-  stage: "RELEASE_HARDENING"
-  current_work_item: "V1.0-CLOSEOUT"
-  status: "IN_PROGRESS"
+  release_status: "V1.0"
+  stage: "RELEASED"
+  current_work_item: "V1.0-RELEASE"
+  status: "COMPLETE"
   completed:
     - "MVP-D00"
     - "MVP-D01"
@@ -541,9 +543,10 @@ PROJECT_PROGRESS:
     - "PBI-01"
     - "PBI-02"
     - "PBI-03"
-  next: "PBI-04 final visual proof and PBI-05 acceptance"
-  blockers:
-    - "Power BI Desktop must export PBIP/PBIR"
+    - "PBI-04"
+    - "PBI-05"
+  next: "POST_V1_BACKLOG_REQUIRES_NEW_CONTRACT"
+  blockers: []
 ```
 
 ---
@@ -556,10 +559,10 @@ El objetivo de release es:
 V1.0
 ```
 
-Mientras no se cumpla la Definition of Done, el estado será:
+La Definition of Done fue aceptada por el usuario. El estado promovido es:
 
 ```text
-RELEASE_CANDIDATE
+V1.0
 ```
 
 Las versiones de documentos, contrato de datos, esquema, generador y release son independientes y deben registrarse por separado.
@@ -575,3 +578,4 @@ No se crearán versiones globales intermedias por cada incremento funcional. La 
 |2026-08-13|0.1|draft|Borrador previo al trabajo con Codex.|
 |2026-08-13|0.2|approved|Se establece y aprueba el objetivo V1.0, la precedencia contractual, la construcción con Codex, el Core acotado y la política sin Git.|
 |2026-08-16|0.3|approved|Se sincroniza el estado RELEASE_CANDIDATE, la autorización de Git y el cierre técnico, manteniendo pendientes los gates finales de Power BI y el release v1.0.0.|
+|2026-08-16|0.4|approved|El usuario acepta el PBIX construido en Power BI Desktop, cierra los gates finales y promueve el release a V1.0/v1.0.0.|

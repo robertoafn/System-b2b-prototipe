@@ -6,21 +6,22 @@ This directory is the source-control companion of `../b2b_v1.pbix`.
 
 | Artifact | Status | Authority |
 |---|---|---|
-| `../b2b_v1.pbix` | present and functional | current executable Power BI artifact |
+| `../b2b_v1.pbix` | accepted for V1.0 | authoritative executable Power BI artifact |
 | `TMDLScripts/measures.tmdl` | present | reviewable mirror of the 39 DAX measures |
 | `model-contract.json` | present | reviewable contract for tables, relationships, pages and gates |
-| PBIP/TMDL semantic-model export | pending | must be produced by Power BI Desktop |
-| PBIR report export | pending | must be produced and verified by Power BI Desktop |
+| PBIP/TMDL semantic-model export | optional post-V1 | must be produced by Power BI Desktop |
+| PBIR report export | optional post-V1 | must be produced and verified by Power BI Desktop |
 
 This folder intentionally does **not** contain a fabricated `.pbip` or PBIR
 definition. Microsoft supports PBIX-to-PBIP conversion only through Power BI
 Desktop's **File > Save As** operation. The generated files must therefore be
-exported from the verified PBIX and reviewed before becoming authoritative.
+exported from the verified PBIX and reviewed before becoming authoritative. The
+user accepted the manually authored PBIX as the V1.0 artifact on 2026-08-16.
 
-## Manual migration checkpoint
+## Optional post-V1 migration checkpoint
 
 1. Open `powerbi/b2b_v1.pbix` in Power BI Desktop.
-2. Complete PBI-04 and PBI-05 in the interactive guide.
+2. Preserve the accepted V1.0 PBIX before converting it.
 3. Enable the Power BI Project, TMDL semantic model, and enhanced report format
    preview features if the installed Desktop version still requires them.
 4. Use **File > Save As** and select **Power BI Project (.pbip)**.
