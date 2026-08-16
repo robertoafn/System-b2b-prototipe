@@ -1,0 +1,228 @@
+{
+  "artifacts": {
+    "kpi_controls_sha256": "D9A6B766E81CA92B57E7A19B4C907C3C9604CDB2CB3BFE594A5C8339303E90B6",
+    "marts_combined_sha256": "695B212124321199B65C090F6251C98083424383BF9CB4834848D48667CDC661",
+    "marts_parquet_sha256": {
+      "dim_customer": "0516E4B34AD4A14D6F9373A30D7FBD3959E26A1C4516C7F42C08941246D5171E",
+      "dim_date": "4A0721175358280EDFB625F52CAFBFCCD69D566AFA233EC20A5F6D4562A5CB9C",
+      "dim_location": "03D79F60F59EDA5EDF61FBDC932C6FA7BBE39F24A958C0D4CEEECECB60428491",
+      "dim_operational_site": "E3D4204AA7F2437F06E26EFCDD9B555B4BD9C45E35BA581DA19523C461EE0D3A",
+      "dim_product": "C7610D19335B83BA7E035401BC925C98F984921D68A39128DB5322956CC04BE7",
+      "dim_vehicle": "7C53C1A645E75B9A35606531CF07A1FFD06D04A07B294638F9142F91D4EC9141",
+      "fact_cost_to_serve": "CF64AB0E272D477CF971F504E05BCC5B767BB03504A296F1DD19914A23C29D42",
+      "fact_deliveries": "51CE5FE2B7BB1ADDBC60590D22C9B784B6FC60C9FAEF2FC6D296152A8D0C6380",
+      "fact_delivery_lines": "F6A14A78E657829889639C3B4C103FF1BED757D14D5BDF54AD0681B6F5029C8D",
+      "fact_inventory": "3AB154B4CF4454B4644D4DAA94EF5EC5E6BF9ADC48873B5C7C4C693995B19FF2",
+      "fact_order_lines": "F06B7646090D02CCFB2ACC123296D3045F84F63C4D9DDA2EBA3DB3343A75C7D9",
+      "fact_orders": "23689A689C4BA22DF73B2198C928611406BA3C3D2008CF15F6A7E764DEFB3A3B",
+      "meta_run": "029B84300F59A3EF5F6C2AF031CCF2C11C48358F65C672A90225858FB289985E",
+      "qa_results": "A0A692C6151F81681E24C141019127539581697681F4F98F1916F8377D773D8A"
+    },
+    "marts_quality_report_sha256": "864EF85DCF3BCB55F2B9DE77AA04A674296DC94D23A4681F645F54DFAE41BFF5",
+    "quality_report_sha256": "3C58D7561BD917F93BED1545A74A608BA783BB9B94AAF7628DE9441116F1CBD5",
+    "synthetic_csv_sha256": {
+      "cost_activities": "8090B2717940B320D79CB67935BABB468597F25CC807DF5930657C68C1FC83A1",
+      "customers": "8BA2C7192AFC5A590A34D9C1362F47F5A5EC08BC3572A543CA7C5F9EE0D1E0C6",
+      "deliveries": "37DB4C8D7501021F622EACA5C807F42022FB992B2F08D97D55E268E42F56B3BC",
+      "delivery_lines": "A4BBFE2E5A26041ECBA735966A225383BC06E50CC345679373D91221DE11FFCF",
+      "inventory": "FDD6D1C35EF07E25378947BDF87BC1D9840C421D5CE07FFF21B98D28189FE781",
+      "locations": "36CAFDF20DEBEF3A12D3A2401E0BCD1A1BBD2D5560F46458AC8DED8B098770F4",
+      "operational_sites": "D2D1AC3D7A99C3B96DE2E9EBFC0D70AE329241A8738D7120D583967618CD1251",
+      "order_lines": "B3333BD61333C432722654351366D6AD7432541697AB124925739B628F03643E",
+      "orders": "71326BEA7D854D945315CC3A34436DDC467EFF2ED502CF2204C1E47BC16146CD",
+      "products": "E2734574B9A792CE288F8A2CB162229A00AB7E3991ABB5697FB6D5853C97832B",
+      "vehicles": "918896B39857601A8166A223701FA0CEA1DACF76D1587052EBCD8EA8D10D09FE"
+    },
+    "validated_parquet_sha256": {
+      "cost_activities": "4B8575D4D499FDB5CBD184EC454A07514F8E5AC71C658707358B57C1A288133D",
+      "customers": "2159CD1BD723A1B3ABB9DDEEA434CC51E4B189DC54FEC7ACF330CB27F5B79E8C",
+      "deliveries": "53E5FAB132531A224566A7659561B400FEEE07BF76ED55977F899B9F2E998F73",
+      "delivery_lines": "BCD9850838B033CCB3DF220C0A780A54AD127DE00BE7CAD47A4155497C30B6F8",
+      "inventory": "CE50E8656ABB75A9F9B502E1697C691108EA7182276851FE465B25609AEB6E63",
+      "locations": "A511B0EBFB9942930CF51B8748F2FB7A273445D89FF1E77F402F9C341A5F033D",
+      "operational_sites": "1AA51662398E97C4D998DE2B654B4018F5FEB568D5718CA3869CEFCD9FFAD443",
+      "order_lines": "FD961210A6F4CF601C17412CA86BB70DC6D50B947F402E641E30F5330280464C",
+      "orders": "F5EEC1EA2AA8549B53ECB308CA5D4C9967E67428BC07E1D5D65A7DA4ED531F59",
+      "products": "5C10F2BBF9AEFED22A29452E80612EB6E9C3597DAB86F3E8B02D761152D7F6F0",
+      "vehicles": "080D21DD688C134CF3057C8502CFF2091AB0DDAEA0EC9D6F8142D73ED18150A6"
+    }
+  },
+  "config_sha256": "6EB7E922E5CBE8C30CA046DC6288A1355540B5AF44A09F3EA8D1A1414B4F857B",
+  "control_metrics": {
+    "control_totals": {
+      "contribution_margin": 5637201384.75,
+      "cost_to_serve": 2082958305.74,
+      "mc_cts": 3554243079.01,
+      "recognized_net_sales": 14486600352.07,
+      "variable_product_cost": 8849398967.32
+    },
+    "customer_quadrant_counts": {
+      "high_sales_high_cts": 38,
+      "high_sales_low_cts": 37,
+      "low_sales_high_cts": 37,
+      "low_sales_low_cts": 38
+    },
+    "eligible_orders": 4000,
+    "low_inventory_rate": 0.100091,
+    "row_counts": {
+      "cost_activities": 22165,
+      "customers": 150,
+      "deliveries": 5000,
+      "delivery_lines": 12483,
+      "inventory": 10950,
+      "locations": 151,
+      "operational_sites": 1,
+      "order_lines": 10000,
+      "orders": 4000,
+      "products": 30,
+      "vehicles": 6
+    },
+    "service_class_counts": {
+      "complete_late": 400,
+      "complete_on_time": 2800,
+      "partial_late": 400,
+      "partial_on_time": 400
+    },
+    "service_class_shares": {
+      "complete_late": 0.1,
+      "complete_on_time": 0.7,
+      "partial_late": 0.1,
+      "partial_on_time": 0.1
+    },
+    "stockout_rate": 0.020091
+  },
+  "data_class": "synthetic",
+  "dataset_build_id": "BLD-9102B6E8BF1ABFFC5F32",
+  "datasets": {
+    "cost_activities": {
+      "rejection_reasons": [],
+      "rows_read": 22165,
+      "rows_rejected": 0,
+      "rows_written": 22165
+    },
+    "customers": {
+      "rejection_reasons": [],
+      "rows_read": 150,
+      "rows_rejected": 0,
+      "rows_written": 150
+    },
+    "deliveries": {
+      "rejection_reasons": [],
+      "rows_read": 5000,
+      "rows_rejected": 0,
+      "rows_written": 5000
+    },
+    "delivery_lines": {
+      "rejection_reasons": [],
+      "rows_read": 12483,
+      "rows_rejected": 0,
+      "rows_written": 12483
+    },
+    "inventory": {
+      "rejection_reasons": [],
+      "rows_read": 10950,
+      "rows_rejected": 0,
+      "rows_written": 10950
+    },
+    "locations": {
+      "rejection_reasons": [],
+      "rows_read": 151,
+      "rows_rejected": 0,
+      "rows_written": 151
+    },
+    "operational_sites": {
+      "rejection_reasons": [],
+      "rows_read": 1,
+      "rows_rejected": 0,
+      "rows_written": 1
+    },
+    "order_lines": {
+      "rejection_reasons": [],
+      "rows_read": 10000,
+      "rows_rejected": 0,
+      "rows_written": 10000
+    },
+    "orders": {
+      "rejection_reasons": [],
+      "rows_read": 4000,
+      "rows_rejected": 0,
+      "rows_written": 4000
+    },
+    "products": {
+      "rejection_reasons": [],
+      "rows_read": 30,
+      "rows_rejected": 0,
+      "rows_written": 30
+    },
+    "vehicles": {
+      "rejection_reasons": [],
+      "rows_read": 6,
+      "rows_rejected": 0,
+      "rows_written": 6
+    }
+  },
+  "error": null,
+  "executed_at": "2026-08-14T05:14:52+00:00",
+  "execution_duration_seconds": 8.795156,
+  "execution_id": "EXE-9CF1D288EA304FC482D9EB34835643B3",
+  "generator_version": "0.1.0",
+  "manifest_version": "1.0",
+  "marts_build": {
+    "built_at": "2026-08-14T06:05:17+00:00",
+    "duration_seconds": 8.00052,
+    "execution_id": "MRT-F0A43B2880354EEC8662EE6A1113D26A",
+    "runtime_versions": {
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "python": "3.12.13"
+    },
+    "status": "passed",
+    "tables": {
+      "dim_customer": 150,
+      "dim_date": 365,
+      "dim_location": 151,
+      "dim_operational_site": 1,
+      "dim_product": 30,
+      "dim_vehicle": 7,
+      "fact_cost_to_serve": 22165,
+      "fact_deliveries": 5000,
+      "fact_delivery_lines": 12483,
+      "fact_inventory": 10950,
+      "fact_order_lines": 10000,
+      "fact_orders": 4000,
+      "meta_run": 1,
+      "qa_results": 184
+    }
+  },
+  "marts_quality_summary": {
+    "failed_gates": 0,
+    "passed_gates": 91,
+    "total_gates": 91
+  },
+  "paths": {
+    "manifest_output": "data/manifest",
+    "marts_output": "data/marts",
+    "synthetic_input": "data/synthetic",
+    "validated_output": "data/validated"
+  },
+  "quality_summary": {
+    "failed_by_severity": {},
+    "failed_gates": 0,
+    "passed_gates": 93,
+    "total_gates": 93
+  },
+  "runtime_versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1",
+    "python": "3.12.13",
+    "python_dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.3",
+    "tzdata": "2026.3"
+  },
+  "scenario_id": "B2B-V1-BASE",
+  "schema_version": "1.0.0-rc.1",
+  "seed": 20260813,
+  "status": "passed"
+}

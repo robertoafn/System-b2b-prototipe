@@ -1,0 +1,1356 @@
+{
+  "dataset_build_id": "BLD-9102B6E8BF1ABFFC5F32",
+  "execution_id": "EXE-9CF1D288EA304FC482D9EB34835643B3",
+  "generated_at": "2026-08-14T05:14:52+00:00",
+  "metrics": {
+    "control_totals": {
+      "contribution_margin": 5637201384.75,
+      "cost_to_serve": 2082958305.74,
+      "mc_cts": 3554243079.01,
+      "recognized_net_sales": 14486600352.07,
+      "variable_product_cost": 8849398967.32
+    },
+    "customer_quadrant_counts": {
+      "high_sales_high_cts": 38,
+      "high_sales_low_cts": 37,
+      "low_sales_high_cts": 37,
+      "low_sales_low_cts": 38
+    },
+    "eligible_orders": 4000,
+    "low_inventory_rate": 0.100091,
+    "row_counts": {
+      "cost_activities": 22165,
+      "customers": 150,
+      "deliveries": 5000,
+      "delivery_lines": 12483,
+      "inventory": 10950,
+      "locations": 151,
+      "operational_sites": 1,
+      "order_lines": 10000,
+      "orders": 4000,
+      "products": 30,
+      "vehicles": 6
+    },
+    "service_class_counts": {
+      "complete_late": 400,
+      "complete_on_time": 2800,
+      "partial_late": 400,
+      "partial_on_time": 400
+    },
+    "service_class_shares": {
+      "complete_late": 0.1,
+      "complete_on_time": 0.7,
+      "partial_late": 0.1,
+      "partial_on_time": 0.1
+    },
+    "stockout_rate": 0.020091
+  },
+  "report_version": "1.0",
+  "results": [
+    {
+      "category": "schema",
+      "datasets": [
+        "customers"
+      ],
+      "gate_id": "schema.customers",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 150,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "products"
+      ],
+      "gate_id": "schema.products",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 30,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "locations"
+      ],
+      "gate_id": "schema.locations",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 151,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "operational_sites"
+      ],
+      "gate_id": "schema.operational_sites",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "vehicles"
+      ],
+      "gate_id": "schema.vehicles",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 6,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "orders"
+      ],
+      "gate_id": "schema.orders",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "schema.order_lines",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "schema.inventory",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "deliveries"
+      ],
+      "gate_id": "schema.deliveries",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "delivery_lines"
+      ],
+      "gate_id": "schema.delivery_lines",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "schema.cost_activities",
+      "message": "columns, required values, formats and logical types conform",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "schema",
+      "datasets": [
+        "cost_activities",
+        "customers",
+        "deliveries",
+        "delivery_lines",
+        "inventory",
+        "locations",
+        "operational_sites",
+        "order_lines",
+        "orders",
+        "products",
+        "vehicles"
+      ],
+      "gate_id": "schema.dataset_set",
+      "message": "source directory contains only the eleven contracted datasets",
+      "rows_evaluated": 11,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "cost_activities",
+        "customers",
+        "deliveries",
+        "delivery_lines",
+        "inventory",
+        "locations",
+        "operational_sites",
+        "order_lines",
+        "orders",
+        "products",
+        "vehicles"
+      ],
+      "gate_id": "lineage.identity",
+      "message": "scenario_id and dataset_build_id are consistent across every dataset",
+      "rows_evaluated": 64936,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "cost_activities",
+        "customers",
+        "deliveries",
+        "delivery_lines",
+        "inventory",
+        "locations",
+        "operational_sites",
+        "order_lines",
+        "orders",
+        "products",
+        "vehicles"
+      ],
+      "gate_id": "lineage.schema_version",
+      "message": "loaded schema version matches scenario configuration",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "customers"
+      ],
+      "gate_id": "pk.customers",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 150,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "products"
+      ],
+      "gate_id": "pk.products",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 30,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "locations"
+      ],
+      "gate_id": "pk.locations",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 151,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "operational_sites"
+      ],
+      "gate_id": "pk.operational_sites",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "vehicles"
+      ],
+      "gate_id": "pk.vehicles",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 6,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "orders"
+      ],
+      "gate_id": "pk.orders",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "pk.order_lines",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "pk.inventory",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "deliveries"
+      ],
+      "gate_id": "pk.deliveries",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "delivery_lines"
+      ],
+      "gate_id": "pk.delivery_lines",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "pk.cost_activities",
+      "message": "primary key is non-null and unique at the declared grain",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "customers",
+        "locations"
+      ],
+      "gate_id": "fk.customers.location_id",
+      "message": "customers.location_id has no orphan references to locations.location_id",
+      "rows_evaluated": 150,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "operational_sites",
+        "locations"
+      ],
+      "gate_id": "fk.operational_sites.location_id",
+      "message": "operational_sites.location_id has no orphan references to locations.location_id",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "orders",
+        "customers"
+      ],
+      "gate_id": "fk.orders.customer_id",
+      "message": "orders.customer_id has no orphan references to customers.customer_id",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "order_lines",
+        "orders"
+      ],
+      "gate_id": "fk.order_lines.order_id",
+      "message": "order_lines.order_id has no orphan references to orders.order_id",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "order_lines",
+        "products"
+      ],
+      "gate_id": "fk.order_lines.sku_id",
+      "message": "order_lines.sku_id has no orphan references to products.sku_id",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "inventory",
+        "operational_sites"
+      ],
+      "gate_id": "fk.inventory.site_id",
+      "message": "inventory.site_id has no orphan references to operational_sites.site_id",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "inventory",
+        "products"
+      ],
+      "gate_id": "fk.inventory.sku_id",
+      "message": "inventory.sku_id has no orphan references to products.sku_id",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "deliveries",
+        "orders"
+      ],
+      "gate_id": "fk.deliveries.order_id",
+      "message": "deliveries.order_id has no orphan references to orders.order_id",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "deliveries",
+        "vehicles"
+      ],
+      "gate_id": "fk.deliveries.vehicle_id",
+      "message": "deliveries.vehicle_id has no orphan references to vehicles.vehicle_id",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "deliveries",
+        "operational_sites"
+      ],
+      "gate_id": "fk.deliveries.origin_site_id",
+      "message": "deliveries.origin_site_id has no orphan references to operational_sites.site_id",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "deliveries",
+        "locations"
+      ],
+      "gate_id": "fk.deliveries.destination_location_id",
+      "message": "deliveries.destination_location_id has no orphan references to locations.location_id",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "delivery_lines",
+        "deliveries"
+      ],
+      "gate_id": "fk.delivery_lines.delivery_id",
+      "message": "delivery_lines.delivery_id has no orphan references to deliveries.delivery_id",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "delivery_lines",
+        "order_lines"
+      ],
+      "gate_id": "fk.delivery_lines.order_line_id",
+      "message": "delivery_lines.order_line_id has no orphan references to order_lines.order_line_id",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "cost_activities",
+        "orders"
+      ],
+      "gate_id": "fk.cost_activities.order_id",
+      "message": "cost_activities.order_id has no orphan references to orders.order_id",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "cost_activities",
+        "deliveries"
+      ],
+      "gate_id": "fk.cost_activities.delivery_id",
+      "message": "cost_activities.delivery_id has no orphan references to deliveries.delivery_id",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "quantity.ordered_positive",
+      "message": "ordered quantities are greater than zero",
+      "rows_evaluated": 10000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "delivery_lines"
+      ],
+      "gate_id": "quantity.delivered_positive",
+      "message": "delivered quantities are greater than zero",
+      "rows_evaluated": 12483,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "order_lines",
+        "delivery_lines"
+      ],
+      "gate_id": "quantity.no_overdelivery",
+      "message": "cumulative delivered quantity never exceeds ordered quantity",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "quantity.inventory_nonnegative",
+      "message": "all inventory quantities are non-negative",
+      "rows_evaluated": 10950,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "quantity.inventory_allocation",
+      "message": "allocated inventory does not exceed on-hand inventory",
+      "rows_evaluated": 10950,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "quantity.inventory_equation",
+      "message": "available quantity reconciles to on-hand less allocated",
+      "rows_evaluated": 10950,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "quantity.inventory_thresholds",
+      "message": "reorder point is not below safety stock",
+      "rows_evaluated": 10950,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "quantity.inventory_flags",
+      "message": "stockout and low-inventory flags reconcile to available quantity",
+      "rows_evaluated": 10950,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "deliveries"
+      ],
+      "gate_id": "quantity.delivery_values",
+      "message": "delivery sequence is positive and distance is non-negative",
+      "rows_evaluated": 5000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "products"
+      ],
+      "gate_id": "economics.product_reference",
+      "message": "product prices, costs, weight and volume are valid",
+      "rows_evaluated": 30,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "vehicles"
+      ],
+      "gate_id": "economics.vehicle_reference",
+      "message": "vehicle capacity and reference costs are valid",
+      "rows_evaluated": 6,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "economics.line_ranges",
+      "message": "transactional prices, discounts and variable costs are valid",
+      "rows_evaluated": 10000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "economics.net_unit_price",
+      "message": "net unit price reconciles to list price less discount",
+      "rows_evaluated": 10000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "economics.ordered_net_sales",
+      "message": "ordered net sales reconciles at line grain",
+      "rows_evaluated": 10000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "economics.cost_nonnegative",
+      "message": "cost amounts and present driver values are non-negative",
+      "rows_evaluated": 22165,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "orders"
+      ],
+      "gate_id": "time.order_requested",
+      "message": "requested delivery is null or not before order time",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "orders"
+      ],
+      "gate_id": "time.order_promised",
+      "message": "promised delivery is not before order time",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "orders",
+        "deliveries"
+      ],
+      "gate_id": "time.delivery_dispatch",
+      "message": "dispatch is not before order time",
+      "rows_evaluated": 5000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "deliveries"
+      ],
+      "gate_id": "time.delivery_event",
+      "message": "delivery is not before dispatch",
+      "rows_evaluated": 5000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "orders",
+        "cost_activities"
+      ],
+      "gate_id": "time.cost_activity",
+      "message": "cost activity is not before order time",
+      "rows_evaluated": 22165,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "grain.order_sku",
+      "message": "each SKU appears at most once within an order",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "deliveries"
+      ],
+      "gate_id": "grain.delivery_sequence",
+      "message": "delivery sequence is unique within an order",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "uniqueness",
+      "datasets": [
+        "delivery_lines"
+      ],
+      "gate_id": "grain.delivery_order_line",
+      "message": "an order line appears once per delivery event",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "delivery_lines",
+        "deliveries",
+        "order_lines"
+      ],
+      "gate_id": "lineage.delivery_line_order",
+      "message": "delivery and order line belong to the same order",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "deliveries",
+        "orders",
+        "customers"
+      ],
+      "gate_id": "lineage.delivery_destination",
+      "message": "delivery destination equals the ordering customer's location",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "cost_activities",
+        "deliveries"
+      ],
+      "gate_id": "lineage.cost_delivery_order",
+      "message": "delivery-attributed cost belongs to the same order as its delivery",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "completeness",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "lineage.cost_delivery_required",
+      "message": "transport and delivery cost activities identify a delivery",
+      "rows_evaluated": 22165,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "completeness",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "lineage.cost_driver_unit",
+      "message": "a present cost driver always declares its unit",
+      "rows_evaluated": 22165,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "completeness",
+      "datasets": [
+        "orders",
+        "order_lines"
+      ],
+      "gate_id": "cardinality.order_lines",
+      "message": "every order contains at least one order line",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "completeness",
+      "datasets": [
+        "deliveries",
+        "delivery_lines"
+      ],
+      "gate_id": "cardinality.delivery_lines",
+      "message": "every delivery contains at least one delivery line",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "orders",
+        "order_lines",
+        "delivery_lines"
+      ],
+      "gate_id": "consistency.order_status",
+      "message": "order status reconciles with cumulative delivered quantities",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "completeness",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "coverage.inventory_daily",
+      "message": "one daily snapshot exists for every date × site × SKU",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "delivery_lines",
+        "products",
+        "deliveries",
+        "vehicles"
+      ],
+      "gate_id": "capacity.delivery_vehicle",
+      "message": "delivery weight and volume fit assigned vehicle capacity",
+      "rows_evaluated": 5000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "customers",
+        "locations"
+      ],
+      "gate_id": "lineage.customer_location_type",
+      "message": "customer foreign keys reference customer-type locations",
+      "rows_evaluated": 150,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "integrity",
+      "datasets": [
+        "operational_sites",
+        "locations"
+      ],
+      "gate_id": "lineage.site_location_type",
+      "message": "operational site foreign keys reference site-type locations",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "customers",
+        "orders"
+      ],
+      "gate_id": "time.customer_created",
+      "message": "order date is not before customer creation date",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "locations"
+      ],
+      "gate_id": "geography.coordinates",
+      "message": "latitude and longitude are within valid bounds",
+      "rows_evaluated": 151,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "consistency",
+      "datasets": [
+        "locations"
+      ],
+      "gate_id": "provenance.locations",
+      "message": "location is_synthetic agrees with data_class",
+      "rows_evaluated": 151,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "validity",
+      "datasets": [
+        "customers",
+        "products",
+        "operational_sites",
+        "vehicles",
+        "orders",
+        "order_lines",
+        "inventory",
+        "deliveries",
+        "delivery_lines",
+        "cost_activities"
+      ],
+      "gate_id": "provenance.operational",
+      "message": "all operational records are explicitly identified as synthetic",
+      "rows_evaluated": 64785,
+      "severity": "critical",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "customers"
+      ],
+      "gate_id": "volume.customers",
+      "message": "customers row count equals configured exact count",
+      "rows_evaluated": 150,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "products"
+      ],
+      "gate_id": "volume.products",
+      "message": "products row count equals configured exact count",
+      "rows_evaluated": 30,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "vehicles"
+      ],
+      "gate_id": "volume.vehicles",
+      "message": "vehicles row count equals configured exact count",
+      "rows_evaluated": 6,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "operational_sites"
+      ],
+      "gate_id": "volume.operational_sites",
+      "message": "operational_sites row count equals configured exact count",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "orders"
+      ],
+      "gate_id": "volume.orders",
+      "message": "order count is within configured tolerance",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "volume",
+      "datasets": [
+        "order_lines"
+      ],
+      "gate_id": "volume.order_lines",
+      "message": "order-line count is within configured tolerance",
+      "rows_evaluated": 10000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "orders",
+        "order_lines",
+        "deliveries",
+        "delivery_lines"
+      ],
+      "gate_id": "coverage.service.complete_on_time",
+      "message": "complete_on_time share is at least 60% of eligible orders",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "orders",
+        "order_lines",
+        "deliveries",
+        "delivery_lines"
+      ],
+      "gate_id": "coverage.service.complete_late",
+      "message": "complete_late share is at least 5% of eligible orders",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "orders",
+        "order_lines",
+        "deliveries",
+        "delivery_lines"
+      ],
+      "gate_id": "coverage.service.partial_on_time",
+      "message": "partial_on_time share is at least 5% of eligible orders",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "orders",
+        "order_lines",
+        "deliveries",
+        "delivery_lines"
+      ],
+      "gate_id": "coverage.service.partial_late",
+      "message": "partial_late share is at least 5% of eligible orders",
+      "rows_evaluated": 4000,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "coverage.stockout",
+      "message": "stockout observations cover at least 1% of inventory snapshots",
+      "rows_evaluated": 10950,
+      "severity": "medium",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "inventory"
+      ],
+      "gate_id": "coverage.low_inventory",
+      "message": "low-inventory observations cover at least 5% of inventory snapshots",
+      "rows_evaluated": 10950,
+      "severity": "medium",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "customers",
+        "orders",
+        "order_lines",
+        "delivery_lines",
+        "cost_activities"
+      ],
+      "gate_id": "coverage.customer_quadrants",
+      "message": "each sales/CTS median quadrant contains at least five customers",
+      "rows_evaluated": 150,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "coverage",
+      "datasets": [
+        "cost_activities"
+      ],
+      "gate_id": "coverage.cost_components",
+      "message": "all six minimum CTS components are represented",
+      "rows_evaluated": 6,
+      "severity": "high",
+      "status": "passed",
+      "violation_count": 0,
+      "violation_rate": 0.0
+    }
+  ],
+  "schema_version": "1.0.0-rc.1",
+  "status": "passed",
+  "summary": {
+    "failed_by_severity": {},
+    "failed_gates": 0,
+    "passed_gates": 93,
+    "total_gates": 93
+  }
+}

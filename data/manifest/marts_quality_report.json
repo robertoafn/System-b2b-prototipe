@@ -1,0 +1,1240 @@
+{
+  "dataset_build_id": "BLD-9102B6E8BF1ABFFC5F32",
+  "generated_at": "2026-08-14T06:05:17+00:00",
+  "marts_execution_id": "MRT-F0A43B2880354EEC8662EE6A1113D26A",
+  "report_version": "1.0",
+  "results": [
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_customer.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 150,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_customer.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 150,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_product.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 30,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_product"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_product.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 30,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_product"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_location.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 151,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_location.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 151,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_operational_site.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_operational_site"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_operational_site.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_operational_site"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_vehicle.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 7,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_vehicle"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_vehicle.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 7,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_vehicle"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_date.surrogate_key",
+      "message": "surrogate key is populated and unique",
+      "rows_evaluated": 365,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "dimension_key",
+      "gate_id": "dimension.dim_date.business_key",
+      "message": "business key is populated and unique",
+      "rows_evaluated": 365,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_orders",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_order_lines",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_deliveries",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_delivery_lines",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_inventory",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "grain",
+      "gate_id": "grain.fact_cost_to_serve",
+      "message": "declared fact grain is populated and unique",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_orders",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_order_lines",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_deliveries",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_delivery_lines",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_inventory",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "cardinality",
+      "gate_id": "cardinality.fact_cost_to_serve",
+      "message": "fact row count matches its validated source grain",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_orders.customer_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_orders.location_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_orders.order_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_orders.promised_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_orders.completion_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_order_lines.customer_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines",
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_order_lines.product_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines",
+        "dim_product"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_order_lines.location_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines",
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_order_lines.order_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_order_lines.promised_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.customer_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.location_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.site_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_operational_site"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.vehicle_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_vehicle"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.order_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.dispatch_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.delivery_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_deliveries.promised_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 5000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.customer_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.product_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_product"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.location_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.site_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_operational_site"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.vehicle_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_vehicle"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.order_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.delivery_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_delivery_lines.promised_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 12483,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_delivery_lines",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_inventory.site_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory",
+        "dim_operational_site"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_inventory.product_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory",
+        "dim_product"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_inventory.snapshot_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 10950,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.customer_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_customer"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.location_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_location"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.vehicle_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_vehicle"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.order_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.activity_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "relationship",
+      "gate_id": "relationship.fact_cost_to_serve.delivery_date_key",
+      "message": "fact key resolves to exactly one conformed dimension row",
+      "rows_evaluated": 22165,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve",
+        "dim_date"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.ordered_quantity",
+      "message": "ordered_quantity reconciles from lines to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.delivered_quantity",
+      "message": "delivered_quantity reconciles from lines to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.recognized_net_sales",
+      "message": "recognized_net_sales reconciles from delivery detail to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_delivery_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.variable_product_cost",
+      "message": "variable_product_cost reconciles from delivery detail to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_delivery_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.contribution_margin",
+      "message": "contribution_margin reconciles from delivery detail to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_delivery_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "reconciliation",
+      "gate_id": "reconcile.orders.cts_amount",
+      "message": "CTS reconciles from unique cost activities to orders",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders",
+        "fact_cost_to_serve"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "formula",
+      "gate_id": "formula.orders.mc_cts",
+      "message": "MC_CTS equals Net Sales minus Variable Product Cost minus CTS",
+      "rows_evaluated": 4000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "formula",
+      "gate_id": "formula.order_lines.no_overdelivery",
+      "message": "cumulative delivered quantity does not exceed ordered quantity",
+      "rows_evaluated": 10000,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-01.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-02.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-03.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-04.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-05.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-08.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-11.source_reconciliation",
+      "message": "Python KPI control reconciles with validated source evidence",
+      "rows_evaluated": 1,
+      "severity": "critical",
+      "status": "passed",
+      "tables": [
+        "fact_inventory"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-01.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-02.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-03.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-04.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-05.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-06.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-07.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-08.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-09.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_order_lines"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-10.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-11.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_inventory"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-12.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_inventory"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-13.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-14.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-15.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_cost_to_serve"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-16.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_deliveries"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    },
+    {
+      "category": "kpi",
+      "gate_id": "kpi.KPI-17.finite",
+      "message": "KPI is finite or BLANK for a zero denominator",
+      "rows_evaluated": 1,
+      "severity": "high",
+      "status": "passed",
+      "tables": [
+        "fact_orders"
+      ],
+      "violation_count": 0,
+      "violation_rate": 0.0
+    }
+  ],
+  "scenario_id": "B2B-V1-BASE",
+  "status": "passed",
+  "summary": {
+    "failed_gates": 0,
+    "passed_gates": 91,
+    "total_gates": 91
+  },
+  "validation_execution_id": "EXE-9CF1D288EA304FC482D9EB34835643B3"
+}

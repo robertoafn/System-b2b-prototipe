@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0.0-rc.1",
+  "datasets": {
+    "customers": {
+      "primary_key": ["customer_id"],
+      "columns": [
+        {"name": "customer_id", "type": "string", "nullable": false, "pattern": "^CUS-SYN-[0-9]{3}$"},
+        {"name": "customer_name", "type": "string", "nullable": false},
+        {"name": "customer_segment", "type": "string", "nullable": false},
+        {"name": "location_id", "type": "string", "nullable": false},
+        {"name": "created_date", "type": "date", "nullable": false},
+        {"name": "is_active", "type": "boolean", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "products": {
+      "primary_key": ["sku_id"],
+      "columns": [
+        {"name": "sku_id", "type": "string", "nullable": false, "pattern": "^SKU-SYN-[0-9]{3}$"},
+        {"name": "sku_name", "type": "string", "nullable": false},
+        {"name": "product_family", "type": "string", "nullable": false},
+        {"name": "unit", "type": "string", "nullable": false},
+        {"name": "reference_list_unit_price", "type": "number", "nullable": false},
+        {"name": "reference_variable_unit_cost", "type": "number", "nullable": false},
+        {"name": "weight_kg", "type": "number", "nullable": false},
+        {"name": "volume_m3", "type": "number", "nullable": false},
+        {"name": "is_active", "type": "boolean", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "locations": {
+      "primary_key": ["location_id"],
+      "columns": [
+        {"name": "location_id", "type": "string", "nullable": false},
+        {"name": "location_type", "type": "string", "nullable": false, "enum": ["site", "customer"]},
+        {"name": "commune", "type": "string", "nullable": false},
+        {"name": "region", "type": "string", "nullable": false},
+        {"name": "country_code", "type": "string", "nullable": false, "enum": ["CL"]},
+        {"name": "latitude", "type": "number", "nullable": false},
+        {"name": "longitude", "type": "number", "nullable": false},
+        {"name": "data_class", "type": "string", "nullable": false, "enum": ["synthetic", "reference_location"]},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "operational_sites": {
+      "primary_key": ["site_id"],
+      "columns": [
+        {"name": "site_id", "type": "string", "nullable": false, "enum": ["SOR-01"]},
+        {"name": "location_id", "type": "string", "nullable": false},
+        {"name": "site_type", "type": "string", "nullable": false, "enum": ["operational_logistics_node"]},
+        {"name": "is_active", "type": "boolean", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "vehicles": {
+      "primary_key": ["vehicle_id"],
+      "columns": [
+        {"name": "vehicle_id", "type": "string", "nullable": false, "pattern": "^VEH-SYN-[0-9]{2}$"},
+        {"name": "vehicle_type", "type": "string", "nullable": false},
+        {"name": "capacity_kg", "type": "number", "nullable": false},
+        {"name": "capacity_m3", "type": "number", "nullable": false},
+        {"name": "fixed_cost_day", "type": "number", "nullable": false},
+        {"name": "variable_cost_km", "type": "number", "nullable": false},
+        {"name": "is_active", "type": "boolean", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "orders": {
+      "primary_key": ["order_id"],
+      "columns": [
+        {"name": "order_id", "type": "string", "nullable": false, "pattern": "^ORD-SYN-[0-9]{6}$"},
+        {"name": "customer_id", "type": "string", "nullable": false},
+        {"name": "order_datetime", "type": "datetime", "nullable": false},
+        {"name": "requested_delivery_datetime", "type": "datetime", "nullable": true},
+        {"name": "promised_delivery_datetime", "type": "datetime", "nullable": false},
+        {"name": "order_status", "type": "string", "nullable": false, "enum": ["confirmed", "partially_fulfilled", "fulfilled"]},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "order_lines": {
+      "primary_key": ["order_line_id"],
+      "columns": [
+        {"name": "order_line_id", "type": "string", "nullable": false, "pattern": "^OLN-SYN-[0-9]{7}$"},
+        {"name": "order_id", "type": "string", "nullable": false},
+        {"name": "sku_id", "type": "string", "nullable": false},
+        {"name": "ordered_quantity", "type": "number", "nullable": false},
+        {"name": "list_unit_price", "type": "number", "nullable": false},
+        {"name": "synthetic_discount_per_unit", "type": "number", "nullable": false},
+        {"name": "net_unit_price", "type": "number", "nullable": false},
+        {"name": "unit_variable_cost", "type": "number", "nullable": false},
+        {"name": "ordered_net_sales", "type": "number", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "inventory": {
+      "primary_key": ["snapshot_date", "site_id", "sku_id"],
+      "columns": [
+        {"name": "snapshot_date", "type": "date", "nullable": false},
+        {"name": "site_id", "type": "string", "nullable": false},
+        {"name": "sku_id", "type": "string", "nullable": false},
+        {"name": "on_hand_quantity", "type": "number", "nullable": false},
+        {"name": "allocated_quantity", "type": "number", "nullable": false},
+        {"name": "available_quantity", "type": "number", "nullable": false},
+        {"name": "safety_stock_quantity", "type": "number", "nullable": false},
+        {"name": "reorder_point_quantity", "type": "number", "nullable": false},
+        {"name": "is_stockout", "type": "boolean", "nullable": false},
+        {"name": "is_low_inventory", "type": "boolean", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "deliveries": {
+      "primary_key": ["delivery_id"],
+      "columns": [
+        {"name": "delivery_id", "type": "string", "nullable": false, "pattern": "^DEL-SYN-[0-9]{6}$"},
+        {"name": "order_id", "type": "string", "nullable": false},
+        {"name": "vehicle_id", "type": "string", "nullable": false},
+        {"name": "origin_site_id", "type": "string", "nullable": false},
+        {"name": "destination_location_id", "type": "string", "nullable": false},
+        {"name": "delivery_sequence", "type": "integer", "nullable": false},
+        {"name": "dispatch_datetime", "type": "datetime", "nullable": false},
+        {"name": "delivery_datetime", "type": "datetime", "nullable": false},
+        {"name": "distance_km", "type": "number", "nullable": false},
+        {"name": "delivery_status", "type": "string", "nullable": false, "enum": ["delivered", "delivered_with_incident"]},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "delivery_lines": {
+      "primary_key": ["delivery_line_id"],
+      "columns": [
+        {"name": "delivery_line_id", "type": "string", "nullable": false, "pattern": "^DLN-SYN-[0-9]{7}$"},
+        {"name": "delivery_id", "type": "string", "nullable": false},
+        {"name": "order_line_id", "type": "string", "nullable": false},
+        {"name": "delivered_quantity", "type": "number", "nullable": false},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    },
+    "cost_activities": {
+      "primary_key": ["cost_activity_id"],
+      "columns": [
+        {"name": "cost_activity_id", "type": "string", "nullable": false, "pattern": "^CST-SYN-[0-9]{8}$"},
+        {"name": "order_id", "type": "string", "nullable": false},
+        {"name": "delivery_id", "type": "string", "nullable": true},
+        {"name": "activity_datetime", "type": "datetime", "nullable": false},
+        {"name": "cost_type", "type": "string", "nullable": false, "enum": ["order_processing", "picking", "handling", "transport", "delivery", "incident"]},
+        {"name": "cost_amount", "type": "number", "nullable": false},
+        {"name": "currency_code", "type": "string", "nullable": false, "enum": ["CLP"]},
+        {"name": "cost_driver_value", "type": "number", "nullable": true},
+        {"name": "cost_driver_unit", "type": "string", "nullable": true},
+        {"name": "allocation_method", "type": "string", "nullable": false, "enum": ["direct_order", "direct_delivery", "proportional_weight", "proportional_volume", "proportional_distance"]},
+        {"name": "scenario_id", "type": "string", "nullable": false},
+        {"name": "dataset_build_id", "type": "string", "nullable": false, "pattern": "^BLD-[A-F0-9]{20}$"},
+        {"name": "is_synthetic", "type": "boolean", "nullable": false}
+      ]
+    }
+  }
+}

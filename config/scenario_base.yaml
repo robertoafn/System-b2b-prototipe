@@ -1,0 +1,17 @@
+scenario_id: "B2B-V1-BASE"
+data_class: "synthetic"
+seed: 20260813
+period_start: "2025-08-01"
+period_end: "2026-07-31"
+timezone: "America/Santiago"
+currency: "CLP"
+customers_exact: 150
+skus_exact: 30
+vehicles_exact: 6
+operational_sites_exact: 1
+orders_target: 4000
+orders_tolerance_pct: 5
+order_lines_target: 10000
+order_lines_tolerance_pct: 10
+generator_version: "0.1.0"
+schema_version: "1.0.0-rc.1"

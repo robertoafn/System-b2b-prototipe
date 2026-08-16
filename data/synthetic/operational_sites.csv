@@ -1,0 +1,2 @@
+site_id,location_id,site_type,is_active,scenario_id,dataset_build_id,is_synthetic
+SOR-01,LOC-SYN-SITE-001,operational_logistics_node,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True

@@ -1,0 +1,152 @@
+location_id,location_type,commune,region,country_code,latitude,longitude,data_class,scenario_id,dataset_build_id,is_synthetic
+LOC-SYN-SITE-001,site,Quilicura (referencia sintética),Región Metropolitana de Santiago,CL,-33.379,-70.735,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-001,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.413843,-70.777344,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-002,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.940476,-71.166317,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-003,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.431055,-70.704771,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-004,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.060074,-71.183552,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-005,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.413396,-70.655807,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-006,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.086675,-71.130242,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-007,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.444721,-70.627443,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-008,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.972758,-71.137275,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-009,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.44049,-70.629497,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-010,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.057994,-71.112906,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-011,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.455209,-70.686495,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-012,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.005346,-71.147154,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-013,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.473594,-70.716165,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-014,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.051975,-71.128072,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-015,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.489538,-70.606685,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-016,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.000089,-71.076709,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-017,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.431987,-70.708464,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-018,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.002951,-71.226479,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-019,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.464192,-70.737124,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-020,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.052163,-71.144567,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-021,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.533687,-70.809909,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-022,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.027623,-71.172255,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-023,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.47221,-70.739009,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-024,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.085397,-71.226681,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-025,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.465777,-70.684547,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-026,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.99694,-71.162279,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-027,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.469138,-70.715141,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-028,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.05933,-71.220042,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-029,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.440563,-70.705933,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-030,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.007994,-71.182873,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-031,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.397369,-70.724024,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-032,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.973869,-71.313025,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-033,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.479425,-70.702934,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-034,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.970564,-71.193675,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-035,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.438052,-70.718832,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-036,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.009991,-71.18389,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-037,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.376878,-70.71813,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-038,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.007063,-71.101641,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-039,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.457432,-70.663983,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-040,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.072343,-71.206364,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-041,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.504353,-70.732402,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-042,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.010293,-71.184623,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-043,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.447891,-70.692882,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-044,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.015736,-71.181073,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-045,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.469219,-70.715101,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-046,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.033444,-71.16232,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-047,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.460091,-70.643045,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-048,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.009983,-71.157643,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-049,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.478425,-70.739296,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-050,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.942014,-71.28662,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-051,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.438176,-70.703025,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-052,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.114029,-71.218099,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-053,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.45825,-70.698549,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-054,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.94806,-71.232413,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-055,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.390912,-70.671142,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-056,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.103762,-71.188325,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-057,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.447521,-70.676485,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-058,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.005788,-71.229799,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-059,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.476864,-70.700588,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-060,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.022011,-71.215535,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-061,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.444341,-70.64695,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-062,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.943295,-71.111851,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-063,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.392284,-70.644626,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-064,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.073324,-71.170977,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-065,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.481811,-70.735472,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-066,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.00943,-71.192891,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-067,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.44127,-70.635457,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-068,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.059822,-71.211131,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-069,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.443907,-70.637369,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-070,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.023684,-71.103967,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-071,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.488617,-70.676714,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-072,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.081842,-71.221132,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-073,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.504026,-70.667991,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-074,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.127807,-71.116764,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-075,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.416741,-70.642908,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-076,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.080424,-71.202311,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-077,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.429434,-70.71886,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-078,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.042694,-71.145358,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-079,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.440986,-70.685746,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-080,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.890705,-71.167447,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-081,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.426886,-70.722118,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-082,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.945433,-71.281629,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-083,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.494219,-70.700391,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-084,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.923111,-71.295845,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-085,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.453876,-70.685252,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-086,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.02831,-71.229482,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-087,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.399867,-70.674674,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-088,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.07867,-71.166568,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-089,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.458179,-70.711408,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-090,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.125314,-71.27053,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-091,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.454648,-70.674926,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-092,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.989705,-71.239072,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-093,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.438448,-70.627131,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-094,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.852214,-71.214477,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-095,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.457677,-70.690341,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-096,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.130114,-71.15453,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-097,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.372646,-70.637916,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-098,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.049184,-71.179289,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-099,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.466893,-70.739235,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-100,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.107059,-71.117367,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-101,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.437438,-70.773083,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-102,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.97234,-71.199265,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-103,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.433038,-70.774852,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-104,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.014724,-71.262914,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-105,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.467896,-70.672342,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-106,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.057425,-71.094961,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-107,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.48515,-70.675931,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-108,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.064181,-71.222712,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-109,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.481179,-70.661617,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-110,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.078245,-71.143056,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-111,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.423629,-70.64869,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-112,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.011089,-71.157969,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-113,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.519184,-70.704717,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-114,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.062939,-71.115207,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-115,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.439161,-70.706695,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-116,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.008673,-71.210177,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-117,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.436298,-70.621987,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-118,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.002617,-71.065144,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-119,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.48401,-70.668219,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-120,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.952832,-71.145827,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-121,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.382307,-70.721671,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-122,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.112959,-71.175859,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-123,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.506165,-70.671952,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-124,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.009586,-71.07691,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-125,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.430901,-70.648692,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-126,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.016521,-71.177264,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-127,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.440295,-70.660951,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-128,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.964577,-71.057912,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-129,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.452965,-70.699864,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-130,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.999265,-71.12829,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-131,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.431264,-70.680437,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-132,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.036835,-71.150697,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-133,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.494682,-70.716276,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-134,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.038818,-71.221697,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-135,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.484567,-70.66563,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-136,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.028428,-71.184029,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-137,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.443415,-70.66621,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-138,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.979764,-71.196981,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-139,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.498547,-70.615683,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-140,customer,Zona Norte,Región Metropolitana de Santiago,CL,-34.010796,-71.124158,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-141,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.407779,-70.73193,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-142,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-33.997462,-71.217163,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-143,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.458267,-70.747723,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-144,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.949532,-71.103215,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-145,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.431253,-70.673899,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-146,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.030697,-71.196731,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-147,customer,Conchalí,Región Metropolitana de Santiago,CL,-33.479648,-70.742627,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-148,customer,Zona Norte,Región Metropolitana de Santiago,CL,-33.974625,-71.218839,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-149,customer,Pudahuel,Región Metropolitana de Santiago,CL,-33.45509,-70.730972,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+LOC-SYN-CUS-150,customer,Zona Oriente,Región Metropolitana de Santiago,CL,-34.014324,-71.122647,synthetic,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True

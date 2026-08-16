@@ -1,0 +1,7 @@
+vehicle_id,vehicle_type,capacity_kg,capacity_m3,fixed_cost_day,variable_cost_km,is_active,scenario_id,dataset_build_id,is_synthetic
+VEH-SYN-01,camión sintético,19000,85,90000.00,725.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+VEH-SYN-02,camión sintético,20000,90,95000.00,800.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+VEH-SYN-03,camión sintético,21000,95,100000.00,875.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+VEH-SYN-04,camión sintético,22000,100,105000.00,950.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+VEH-SYN-05,camión sintético,23000,105,110000.00,1025.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
+VEH-SYN-06,camión sintético,24000,110,115000.00,1100.00,True,B2B-V1-BASE,BLD-9102B6E8BF1ABFFC5F32,True
